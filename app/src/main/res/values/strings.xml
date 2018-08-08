@@ -4,6 +4,6 @@
     <string name="title_first_fragment">first</string>
     <string name="title_second_fragment">second</string>
     <string name="title_third_fragment">third</string>
-    <string name="title_four_fragment">four</string>
-    <string name="title_five_fragment">five</string>
+    <string name="title_fourth_fragment">fourth</string>
+    <string name="title_fifth_fragment">fifth</string>
 </resources>

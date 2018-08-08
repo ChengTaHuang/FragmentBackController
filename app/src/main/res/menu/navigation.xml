@@ -13,10 +13,10 @@
         android:title="@string/title_third_fragment" />
 
     <item
-        android:id="@+id/navigation_four"
-        android:title="@string/title_four_fragment" />
+        android:id="@+id/navigation_fourth"
+        android:title="@string/title_fourth_fragment" />
 
     <item
-        android:id="@+id/navigation_five"
-        android:title="@string/title_five_fragment" />
+        android:id="@+id/navigation_fifth"
+        android:title="@string/title_fifth_fragment" />
 </menu>

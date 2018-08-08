@@ -16,14 +16,14 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     enum class TAG constructor(var string: String){
-        FIRST("FIRST") , SECOND("SECOND") , THIRD("THIRD") , FOUR("FOUR") , FIVE("FIVE")
+        FIRST("FIRST") , SECOND("SECOND") , THIRD("THIRD") , FOURTH("FOURTH") , FIFTH("FIFTH")
     }
 
     private var firstFragment = ContainerFragment.newInstance(MainActivity.TAG.FIRST)
     private val secondFragment = ContainerFragment.newInstance(MainActivity.TAG.SECOND)
     private val thirdFragment = ContainerFragment.newInstance(MainActivity.TAG.THIRD)
-    private val fourFragment = ContainerFragment.newInstance(MainActivity.TAG.FOUR)
-    private val fiveFragment = ContainerFragment.newInstance(MainActivity.TAG.FIVE)
+    private val fourthFragment = ContainerFragment.newInstance(MainActivity.TAG.FOURTH)
+    private val fifthFragment = ContainerFragment.newInstance(MainActivity.TAG.FIFTH)
 
     private val fragmentTagStack = Stack<TAG>()
 
@@ -53,12 +53,12 @@ class MainActivity : AppCompatActivity() {
                     changeFragment(thirdFragment , MainActivity.TAG.THIRD)
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.navigation_four ->{
-                    changeFragment(fourFragment , MainActivity.TAG.FOUR)
+                R.id.navigation_fourth ->{
+                    changeFragment(fourthFragment, MainActivity.TAG.FOURTH)
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.navigation_five ->{
-                    changeFragment(fiveFragment , MainActivity.TAG.FIVE)
+                R.id.navigation_fifth ->{
+                    changeFragment(fifthFragment, MainActivity.TAG.FIFTH)
                     return@setOnNavigationItemSelectedListener true
                 }
                 else -> {
@@ -121,11 +121,11 @@ class MainActivity : AppCompatActivity() {
                     R.id.navigation_third -> {
                         thirdFragment.showFragment(ChildFragment.newInstance(fragmentTag))
                     }
-                    R.id.navigation_four ->{
-                        fourFragment.showFragment(ChildFragment.newInstance(fragmentTag))
+                    R.id.navigation_fourth ->{
+                        fourthFragment.showFragment(ChildFragment.newInstance(fragmentTag))
                     }
-                    R.id.navigation_five ->{
-                        fiveFragment.showFragment(ChildFragment.newInstance(fragmentTag))
+                    R.id.navigation_fifth ->{
+                        fifthFragment.showFragment(ChildFragment.newInstance(fragmentTag))
                     }
                     else -> {
 
@@ -160,8 +160,8 @@ class MainActivity : AppCompatActivity() {
                             MainActivity.TAG.FIRST -> R.id.navigation_first
                             MainActivity.TAG.SECOND -> R.id.navigation_second
                             MainActivity.TAG.THIRD -> R.id.navigation_third
-                            MainActivity.TAG.FOUR -> R.id.navigation_four
-                            MainActivity.TAG.FIVE -> R.id.navigation_five
+                            MainActivity.TAG.FOURTH -> R.id.navigation_fourth
+                            MainActivity.TAG.FIFTH -> R.id.navigation_fifth
                             else -> throw Exception("navigation do not support this tag")
                         }
 
