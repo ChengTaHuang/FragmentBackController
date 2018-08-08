@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentBackController</string>
+
+    <string name="title_first_fragment">first</string>
+    <string name="title_second_fragment">second</string>
+    <string name="title_third_fragment">third</string>
+    <string name="title_four_fragment">four</string>
+    <string name="title_five_fragment">five</string>
+</resources>

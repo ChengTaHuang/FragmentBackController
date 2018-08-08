@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_first"
+        android:title="@string/title_first_fragment" />
+
+    <item
+        android:id="@+id/navigation_second"
+        android:title="@string/title_second_fragment" />
+
+    <item
+        android:id="@+id/navigation_third"
+        android:title="@string/title_third_fragment" />
+
+    <item
+        android:id="@+id/navigation_four"
+        android:title="@string/title_four_fragment" />
+
+    <item
+        android:id="@+id/navigation_five"
+        android:title="@string/title_five_fragment" />
+</menu>
