@@ -68,6 +68,10 @@ class MainActivity : AppCompatActivity() {
         }
         //Reference https://gist.github.com/kooroshh/d8033f7ff4609b97372c71686471e18c
         BottomNavigationViewHelper.disableShiftMode(navigation)
+
+        fab.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     override fun onResume() {
